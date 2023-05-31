@@ -1,0 +1,20 @@
+.revo_logo {
+    position: absolute;
+    width: 109.41px;
+    height: 36.36px;
+    left: 187.29px;
+    top: 75.64px;
+
+    background: url(img/revo_logo.png);
+}
+.main_img {
+    position: absolute;
+    width: 757px;
+    height: 947px;
+    left: 369px;
+    top: -67px;
+
+    background: url(img/main.png);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
