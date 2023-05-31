@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .logo {
+      position: absolute;
+      width: 109.41px;
+      height: 36.36px;
+      left: 187.29px;
+      top: 75.64px;
+      background: url(Image.png);
+    }
+
+    .text-block {
+      position: absolute;
+      width: 486px;
+      height: 200px;
+      left: 180px;
+      top: 504px;
+    }
+
+    .main-text {
+      position: absolute;
+      width: 470px;
+      height: 200px;
+      left: 15px;
+      top: calc(50% - 100px);
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 70px;
+      color: #415167;
+    }
+
+    .base {
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 34.5%;
+      bottom: 30.5%;
+      background: #C7A17A;
+    }
+
+    .image-block {
+      position: absolute;
+      width: 757px;
+      height: 947px;
+      left: 369px;
+      top: 200px; /* Изменено значение для смещения вниз */
+      background: url(Image.png) no-repeat;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+
+    .menu {
+      position: absolute;
+      width: 328px;
+      height: 768px;
+      left: 1126px;
+      top: 0px;
+      display: flex;
+      flex-direction: column; /* Изменено для вертикального расположения элементов */
+    }
+
+    .menu-rectangle {
+      flex-grow: 1; /* Изменено для растяжения прямоугольника на всю высоту меню */
+      background: #415167;
+    }
+
+    .main-menu {
+      position: absolute;
+      height: 22px;
+      left: 17.07%;
+      right: 50%;
+      top: 50px; /* Изменено значение для перемещения текста выше меню */
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #EDF0F5;
+    }
+
+    .menu-items {
+      list-style: none; /* Добавлено для удаления маркеров списка */
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Изменено для центрирования элементов */
+      justify-content: center; /* Изменено для центрирования элементов */
+    }
+
+    .menu-item {
+      position: relative;
+      width: 140px;
+      height: 45px; /* Изменено значение для создания отступов между элементами */
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #EDF0F5;
+      text-align: center; /* Изменено для центрирования текста */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"></div>
+    <div class="text-block">
+      <div class="main-text">
+        YOUR PERSONALIZED  COFFEE
+      </div>
+      <div class="base"></div>
+    </div>
+    <div class="image-block"></div>
+    <div class="menu">
+      <div class="menu-rectangle"></div>
+      <div class="main-menu">
+        TRANG CHỦ
+      </div>
+      <ul class="menu-items">
+        <li class="menu-item">COFFEE</li>
+        <li class="menu-item">PHIN MẠ MÀU</li>
+        <li class="menu-item">COMBO PHIN PHÊ</li>
+        <li class="menu-item">GIFTSET</li>
+        <li class="menu-item">LIÊN HỆ</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

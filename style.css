@@ -28,13 +28,13 @@ html {
 }
 
 .text_block {
-    /* TEXT */
     position: absolute;
     width: 486px;
     height: 200px;
     left: 180px;
     top: 504px;
 }
+
 .text {
     position: absolute;
     width: 470px;
@@ -49,7 +49,7 @@ html {
     line-height: 70px;
     /* or 130% */
 
-
+    z-index: 3;
     color: #415167;
     }
 
@@ -61,4 +61,14 @@ html {
     bottom: 30.5%;
     color: white;
     background: #C7A17A;
+}
+
+.image_block {
+    position: absolute;
+    width: 757px;
+    height: 947px;
+    left: 369px;
+    top: 0px;
+    background: url(img/main.png) no-repeat;
+    mix-blend-mode: normal;
 }
