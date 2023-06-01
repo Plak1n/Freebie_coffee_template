@@ -268,37 +268,72 @@ html {
 }
 
 .block_1 {
-    text-align: center;
     position: absolute;
+    text-align: center;
     width: 226px;
     height: 246.57px;
     left: 148px;
-    top: 991px;
+    top: 500px;
 }
 
 .block_2 {
-    text-align: center;
     position: absolute;
+    text-align: center;
     width: 226px;
     height: 246.43px;
     left: 442px;
-    top: 991px;
+    top: 500px;
 }
 
 .block_3 {
-    text-align: center;
     position: absolute;
+    text-align: center;
     width: 226px;
     height: 246.57px;
     left: 734px;
-    top: 991px;
+    top: 500px;
 }
 
 .block_4 {
-    text-align: center;
     position: absolute;
+    text-align: center;
     width: 226px;
     height: 246.57px;
     left: 1026px;
-    top: 991px;
+    top: 500px;
+}
+.icon_1 {
+    position: absolute;
+    width: 80px;
+    height: 81px;
+    left: 75px;
+    top: -100px;
+    background-image: url("img/block_1.png");
+}
+
+.icon_2 {
+    position: absolute;
+    width: 80px;
+    height: 81px;
+    left: 75px;
+    top: -100px;
+    background-image: url("img/block_2.png");
+}
+
+.icon_3 {
+    position: absolute;
+    width: 80px;
+    height: 81px;
+    left: 75px;
+    top: -100px;
+    background-image: url("img/block_3.png");
+}
+
+.icon_4 {
+    position: absolute;
+    width: 75px;
+    height: 81px;
+    left: 75px;
+    top: -100px;
+    background-image: url("img/block_4.png");
 }
