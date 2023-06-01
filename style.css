@@ -101,10 +101,10 @@ html {
     position: absolute;
     width: 757px;
     height: 947px;
-    left: 369px;
-    top: -67px;
+    left: 436px;
+    top: 0px;
     z-index: 4;
-    background: url(img/main.png);
+    background: url(img/main.png) no-repeat;
     mix-blend-mode: normal;
     opacity: 0.8;
 }
