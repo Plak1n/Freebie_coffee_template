@@ -24,6 +24,22 @@ html {
     left: 50px;
     top: 0px;
 }
+.base {
+    background-image: url("img/BASE.png");
+    position: absolute;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    left: 1210px;
+    top: 60px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+    text-align: center;
+}
 
 .cart {
     background-image: url("img/shopping-cart-3.png");
