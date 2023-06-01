@@ -125,6 +125,15 @@ html {
     opacity: 0.8;
 }
 
+.btn_play {
+    background-image: url("img/BTN_PLAY.png");
+    position: relative;
+    width: 78px;
+    height: 78px;
+    left: 40%;
+    top: 35%;
+}
+
 .mask1 {
     position: absolute;
     width: 690px;
@@ -134,14 +143,16 @@ html {
     z-index: 3;
     background: #151D28;
 }
+
 .menu_block {
-    text-align: center;
+    text-align: left;
     position: absolute;
     width: 328px;
     height: 768px;
     left: 1126px;
     top: 0px;
 }
+
 .trang {
     position: absolute;
     height: 22px;
@@ -179,7 +190,7 @@ html {
 
 .menu-list li {
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
@@ -187,14 +198,13 @@ html {
     line-height: 24px;
     /* or 150% */
 
-
     color: #EDF0F5;
 }
 
 .features {
     display: flex;
     position: absolute;
-    width: 1104px;
+    width: 1304px;
     height: 382.57px;
     left: 148px;
     top: 855px;
@@ -205,7 +215,7 @@ html {
     width: 448px;
     height: 64px;
     left: 483px;
-    top: 64px; 
+    top: 0px; 
 }
 
 .your_coffee {
@@ -213,7 +223,7 @@ html {
     height: 20px;
     left: 11.61%;
     right: 14.73%;
-    top: calc(50% - 20px/2 - 21.84px);
+    top: 0;
 
     font-family: 'Nunito';
     font-style: normal;
@@ -273,7 +283,7 @@ html {
     width: 226px;
     height: 246.57px;
     left: 148px;
-    top: 500px;
+    top: 250px;
 }
 
 .block_2 {
@@ -282,7 +292,7 @@ html {
     width: 226px;
     height: 246.43px;
     left: 442px;
-    top: 500px;
+    top: 250px;
 }
 
 .block_3 {
@@ -291,7 +301,7 @@ html {
     width: 226px;
     height: 246.57px;
     left: 734px;
-    top: 500px;
+    top: 250px;
 }
 
 .block_4 {
@@ -300,7 +310,7 @@ html {
     width: 226px;
     height: 246.57px;
     left: 1026px;
-    top: 500px;
+    top: 250px;
 }
 .icon_1 {
     position: absolute;
