@@ -6,25 +6,40 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    padding: 0;
     margin: 0;
+    border: 0;
 }
 
-.container {
-    position: absolute;
-    width: 1404px;
-    height: 768px;
-    left: 50px;
-    top: 0px;
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 100%; /* 1145 */
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1145px;
+    margin: 0px auto;
 }
 
 .header {
-    position: absolute;
-    width: 1404px;
+    width: 100%;
     height: 768px;
     left: 50px;
     top: 0px;
 }
-.base {
+
+.header__base {
     background-image: url("img/BASE.png");
     position: absolute;
     z-index: 4;
@@ -41,7 +56,7 @@ html {
     text-align: center;
 }
 
-.cart {
+.header__cart {
     background-image: url("img/shopping-cart-3.png");
     position: absolute;
     z-index: 3;
@@ -51,24 +66,14 @@ html {
     top: 74px;
 }
 
-.shape {
-    position: absolute;
-    width: 18px;
-    height: 14.14px;
-    left: 1218px;
-    top: 89px;
-
-    background: #F9FBFF;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-.revo_logo {
+.header__logo {
     position: absolute;
     width: 109.41px;
     height: 36.36px;
     left: 187.29px;
-    top: 75.64px;
+    top: 75.64px;    
 
-    background: url(img/revo_logo.png);
+    background: url(img/revo_logo.svg);
 }
 
 .text_block {
@@ -105,9 +110,9 @@ html {
     background: #C7A17A;
 }
 
-.image_block {
-    position: absolute;
-    width: 1076px;
+.header__image__block {
+    /* width: 1076px; */
+    width: 70%;
     height: 768px;
     left: 50px;
     top: 0px;
