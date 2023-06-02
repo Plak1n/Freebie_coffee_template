@@ -29,6 +29,9 @@ html, body {
 
 
 ._container {
+    display: flex;
+    flex-direction: column;
+    height: 768px;
     max-width: 1190px;
     padding: 0px 20px;
     margin: 0px auto;
@@ -41,19 +44,26 @@ html, body {
     overflow: hidden;
 }
 
-.header__navigation {
+.header__logo, .header__cart {
     padding-top: 74px;
+    z-index: 50;
+}
+
+.header__navigation {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
+
 .header__text {
+    margin-top: auto;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
     line-height: 130%;
     /* or 70px */
+    z-index: 50;
 
     color: #415167;
 }
@@ -62,7 +72,41 @@ html, body {
     color: #F9FBFF;
     padding: 5px 20px 5px 10px;
 }
+.header__image {
+    flex-grow: 1;
+    width: 757px;
+    height: 947px;
+    position: absolute;
+    
+    left: 369px;
+    top: 0px;;
+    background: url(img/main.png) no-repeat;
+}
+.menu__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #EDF0F5;
+    padding: 50px 0;
+}
 
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 328px;
+    height: 768px;
+    left: 1126px;
+    top: 0px;
+    background: #415167;
+}
+.menu__list{
+    
+}
 
 .menu__link {
     color: #EDF0F5;
