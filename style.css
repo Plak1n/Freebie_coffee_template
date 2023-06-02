@@ -29,18 +29,13 @@ html, body {
 
 
 ._container {
-    max-width: 1150px;
+    max-width: 1190px;
+    padding: 0px 20px;
     margin: 0px auto;
 }
-.logo {
-    width: 109.41px;
-    height: 36.36px;
-}
-.cart {
-    width: 38px;
-    height: 38px;
-}
+
 /* ---------------------------------------------- */
+
 .header {
     min-height: 100%;
     overflow: hidden;
@@ -52,6 +47,22 @@ html, body {
     align-items: flex-end;
     justify-content: space-between;
 }
+.header__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 130%;
+    /* or 70px */
+
+    color: #415167;
+}
+.coffee_person {
+    background: #C7A17A;
+    color: #F9FBFF;
+    padding: 5px 20px 5px 10px;
+}
+
 
 .menu__link {
     color: #EDF0F5;
