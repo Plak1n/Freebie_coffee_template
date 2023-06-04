@@ -66,6 +66,7 @@ html, body {
     background: #C7A17A;
     color: #F9FBFF;
     padding: 5px 20px 5px 10px;
+    margin-right: 100px;
 }
 .header__image {
     width: 757px;
@@ -134,7 +135,7 @@ html, body {
 }
 
 .text-title {
-    padding-top: 40px;
+    padding: 40px 0px 10px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
