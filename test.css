@@ -14,6 +14,9 @@ html {
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+}
 ul, ol, li {
     list-style: none;
 }
@@ -35,9 +38,12 @@ html, body {
 
 /* -----Header------------------------------------- */
 
-.header {
+.wrapper {
     min-height: 100%;
     overflow: hidden;
+}
+.header {
+    display: block;
 }
 
 .header__logo, .header__cart {
@@ -45,14 +51,7 @@ html, body {
     z-index: 50;
 }
 
-.header__navigation {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 .header__text {
-    margin-top: auto;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
@@ -63,7 +62,7 @@ html, body {
 
     color: #415167;
 }
-.coffee_person {
+.coffee__person {
     background: #C7A17A;
     color: #F9FBFF;
     padding: 5px 20px 5px 10px;
@@ -71,6 +70,8 @@ html, body {
 .header__image {
     width: 757px;
     height: 947px;
+    top: 0%;
+    left: 30%;
     background: url(img/main.png) no-repeat;
 }
 .menu__title {
@@ -91,6 +92,7 @@ html, body {
     width: 328px;
     height: 768px;
     background: #415167;
+    z-index: 49;
 }
 
 .menu__link {
@@ -122,15 +124,17 @@ html, body {
     color: #415167;
 }
 
+
 .features__coffee {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    justify-items: center;
     padding: 90px 0px;
+    
 }
 
 .text-title {
+    padding-top: 40px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -140,6 +144,7 @@ html, body {
 }
 
 .text-subtitle {
+    padding: 10px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
