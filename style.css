@@ -131,6 +131,7 @@ html, body {
 }
 
 .header__menu {
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +140,11 @@ html, body {
     min-width: 300px;
     background: #415167;
     z-index: 49;
+}
+
+@media (min-width: 1190px)
+{
+
 }
 
 .menu__list li {
