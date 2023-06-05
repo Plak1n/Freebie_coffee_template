@@ -53,6 +53,7 @@ html, body {
 }
 
 .header__logo {
+    margin-left: 150px;
     justify-self: flex-start;
     align-self: flex-start;
 }
@@ -63,6 +64,7 @@ html, body {
 }
 
 .header__text {
+    margin-right: 300px;
     justify-self: flex-start;
     font-family: 'Montserrat';
     font-style: normal;
@@ -134,7 +136,7 @@ html, body {
     align-items: center;
     width: 328px;
     height: 768px;
-    min-width: 200px;
+    min-width: 300px;
     background: #415167;
     z-index: 49;
 }
