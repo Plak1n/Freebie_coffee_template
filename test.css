@@ -34,7 +34,7 @@ html, body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
     max-width: 1190px;
     padding: 0px 20px;
@@ -53,6 +53,7 @@ html, body {
 }
 
 .header__logo {
+    justify-self: flex-start;
     align-self: flex-start;
 }
 
@@ -62,7 +63,7 @@ html, body {
 }
 
 .header__text {
-    align-self: flex-end;
+    justify-self: flex-start;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
@@ -73,18 +74,20 @@ html, body {
 
     color: #415167;
 }
+
 .coffee__person {
     background: #C7A17A;
     color: #F9FBFF;
     padding: 5px 20px 5px 10px;
     margin-right: 100px;
 }
+
 .header__image {
     position: absolute;
     max-width: 757px;
     max-height: 947px;
     top: 0%;
-    left: 15%;
+    left: 20%;
 }
 
 .image__img {
@@ -104,10 +107,14 @@ html, body {
     z-index: 0;
 }
 
-.image__btn {
+.image_button {
     position: relative;
-    top: 50%;
-    left: 50%;
+}
+.image__btn {
+    position: absolute;
+    left: 43%;
+    top: 42%;
+    z-index: 52;
 }
 
 .menu__title {
@@ -127,6 +134,7 @@ html, body {
     align-items: center;
     width: 328px;
     height: 768px;
+    min-width: 200px;
     background: #415167;
     z-index: 49;
 }
