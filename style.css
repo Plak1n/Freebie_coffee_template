@@ -142,9 +142,11 @@ html, body {
     z-index: 49;
 }
 
-@media (min-width: 1190px)
+@media (max-width: 1200px)
 {
-
+    .header__logo {
+        padding-left: 20px;
+    }
 }
 
 .menu__list li {
