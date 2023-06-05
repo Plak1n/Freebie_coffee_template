@@ -37,7 +37,6 @@ html, body {
     justify-content: space-between;
     align-items: flex-end;
     max-width: 1190px;
-    padding: 0px 20px;
     margin: 0px auto;
 }
 
@@ -87,21 +86,25 @@ html, body {
 .header__image {
     position: absolute;
     max-width: 757px;
+    width: 757px;
     max-height: 947px;
+    height: 947px;
     top: 0%;
-    left: 20%;
+    left: 18%;
 }
 
 .image__img {
     position: relative;
+    width: 690px;
+    height: 768px;
     z-index:40;
     opacity: 0.8;
 }
 
 .image__mask {
     position: absolute;
-    max-width: 757px;
-    width: 100%;
+    max-width: 768px;
+    width: 690px;
     height: 768px;
     top: 0%;
     left: 0%;
@@ -147,6 +150,12 @@ html, body {
     .header__logo {
         padding-left: 20px;
     }
+    .image__img {
+        width: 650px;
+    }
+    .image__mask {
+        width: 650px;
+    };
 }
 
 .menu__list li {
