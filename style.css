@@ -43,6 +43,7 @@ html, body {
 /* -----Header------------------------------------- */
 
 .wrapper {
+    background: #F9FBFF;
     min-height: 100%;
     overflow: hidden;
 }
@@ -312,7 +313,7 @@ html, body {
 /*----Shop------------------------------------ */
 
 .shop {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .shop__container {
@@ -366,26 +367,141 @@ color: #415167;
     gap: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .shop__products {
       grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .shop__mask {
+        display: none;
     }
   }
 
+@media (min-width:1300px) {
+    .shop__arrow-left {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 100%;
+        top: 55%;
+    }
+    .shop__shadow_product_1, .shop__shadow_product_2 {
+        width: 235.13px;
+        height: 256px;
+        left: 100%;
+        top: 50%;
+        opacity: 0.6;
+    }
+
+}
+
 .products__1, .products__2, .products__3, .products__4 {
+    display: flex;
     z-index: 49;
 }
 
-.products__1_image-pic {
-    z-index: 48;
+.products__1_image {
+    position: relative;
 }
 
-.products__1_mask {
-    position: absolute;
-    left: 0%;
-    right: 57.94%;
-    top: 0%;
-    bottom: 0%;
-    background: #EDF0F5;
+.products__1_content, .products__2_content, .products__3_content, .products__4_content {
+    width: 304px;
+    padding: 30px 20px 20px 20px;
+    background: #FFFFFF;
+    z-index: 49;
 }
 
+.products__price {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    padding-bottom: 5px;
+
+
+    color: #C7A17A;
+}
+.products__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #232C38;
+    padding-bottom: 24px;
+
+}
+
+.products__text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #151D28;
+    padding-bottom: 40px;
+}
+
+.products__btn {
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 5px;
+    text-align: center;
+    width: 134px;
+    height: 32px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    background: #C7A17A;
+    border-radius: 19px;
+    color: #F9FBFF;
+}
+
+.products__ltext {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #415167;
+}
+
+/* -------Giftset-------------------------------- */
+
+.giftset__container {
+    display: block;
+    max-width: 1190px;
+    margin: 0px auto;
+}
+
+.giftset {
+    padding-top: 200px;
+}
+
+.giftset__title, .giftset__subtitle {
+    text-align: center;
+}
+
+.giftset__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #415167;
+    padding-bottom: 5px;
+}
+
+.giftset__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 113%;
+    
+    color: #415167;
+}
