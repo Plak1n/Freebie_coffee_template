@@ -308,3 +308,75 @@ html, body {
 
     color: #151D28;
 }
+
+/*----Shop------------------------------------ */
+
+.shop {
+    margin-top: 100px;
+}
+
+.shop__container {
+    display: block;
+    max-width: 1190px;
+    margin: 0px auto;
+}
+
+.shop__title, .shop__subtitle {
+    text-align: center;
+    padding-top: 6px;
+}
+
+.shop__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #415167;
+}
+
+.shop__mask {
+    position: absolute;
+    width: 384px;
+    height: 894px;
+    top: -100px;
+    left: -200px;
+    background: #415167;    
+
+}
+
+.shop__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 113%;
+    /* identical to box height, or 113% */
+
+
+color: #415167;
+    padding-bottom: 72px;
+}
+.shop__products {
+    z-index: 50;
+    display: grid;
+    grid-template-columns: repeat(2, 560px);
+    grid-template-rows: repeat(2, 256px);
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .shop__products {
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media (max-width:1100px) and (min-width:1000px) {
+    .shop__products {
+        overflow: auto;
+    }
+}
+
+.products__1, .products__2, .products__3, .products__4 {
+    z-index: 49;
+}
