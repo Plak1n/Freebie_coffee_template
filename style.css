@@ -116,6 +116,7 @@ html, body {
     position: relative;
 }
 .image__btn {
+    display: none;
     position: relative;
     left: 42%;
     top: -450px;
@@ -146,7 +147,7 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-    ._container {
+    .header__container {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -159,12 +160,52 @@ html, body {
 
 @media (max-width: 1150px) {
     .image__img {
-        width: 600px;
+        width: 580px;
     }
     .image_mask {
-        width: 600px;
+        width: 580px;
     }
 
+}
+
+@media (max-width:1000px) {
+    .image__img {
+        width: 550px;
+    }
+    .image_mask {
+        width: 550px;
+    }
+    .header__menu {
+        /* position: sticky; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        height: 768px;
+        min-width: 250px;
+        background: #415167;
+        z-index: 49;
+    }
+}
+
+@media (max-width:900px) {
+    .image__img {
+        width: 500px;
+    }
+    .image_mask {
+        width: 500px;
+    }
+    .header__menu {
+        /* position: sticky; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        height: 768px;
+        min-width: 220px;
+        background: #415167;
+        z-index: 49;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 1100px)
@@ -173,13 +214,13 @@ html, body {
         padding-left: 20px;
     }
     .image__img {
-        width: 650px;
+        width: 620px;
     }
     .image__mask {
-        width: 650px;
+        width: 620px;
     };
     .header__menu {
-        position: sticky;
+        /* position: sticky; */
         display: flex;
         flex-direction: column;
         align-items: center;
