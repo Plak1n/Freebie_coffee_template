@@ -59,6 +59,10 @@ html, body {
     padding-left: 5px;
 }
 
+.header__logo-link {
+    height: 10px;
+}
+
 .header__logo, .header__cart {
     padding-top: 74px;
     z-index: 50;
@@ -243,16 +247,19 @@ html, body {
 
 /* --Features------------------------------------------------------- */
 
+.features {
+    padding-top: 87px;
+}
+
 .features__containter {
     display: block;
 }
 
-.features__title {
-    padding: 87px 0px;
+.features__title, .features__subtitle {
     text-align: center;
 }
 
-.features__title_title {
+.features__title {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -261,15 +268,15 @@ html, body {
     color: #415167;
 }
 
-.features__title_subtitle {
+.features__subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 113%;
     color: #415167;
+    padding-bottom: 47px;
 }
-
 
 .features__coffee {
     display: flex;
@@ -378,12 +385,15 @@ color: #415167;
   }
 
 @media (min-width:1300px) {
-    .shop__arrow-left {
+    .shop__arrow {
         position: absolute;
         width: 48px;
         height: 48px;
         left: 100%;
         top: 55%;
+    }
+    .shop__arrow-link {
+        height: 10px;
     }
     .shop__shadow_product_1, .shop__shadow_product_2 {
         width: 235.13px;
@@ -422,6 +432,7 @@ color: #415167;
 
     color: #C7A17A;
 }
+
 .products__title {
     font-family: 'Nunito';
     font-style: normal;
@@ -504,4 +515,41 @@ color: #415167;
     line-height: 113%;
     
     color: #415167;
+}
+
+
+
+
+
+
+/* ---Combo ----------------------------- */
+
+.combo__container {
+    display: block;
+}
+
+.combo__title {
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #415167;
+    padding-bottom: 5px;
+}
+
+.combo__subtitle {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 113%;
+    color: #415167;
+    padding-bottom: 25px;
+}
+
+.combo__products {
+    display: flex;
 }
