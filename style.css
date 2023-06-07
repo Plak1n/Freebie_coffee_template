@@ -515,6 +515,12 @@ color: #415167;
     padding-top: 200px;
 }
 
+.giftset__content_block {
+    position: relative;
+    left: 25%;
+    width: 430px;
+}
+
 .giftset__title, .giftset__subtitle {
     position: relative;
     text-align: center;
@@ -558,19 +564,105 @@ color: #415167;
     z-index: 5;
 }
 
-.giftset__block {
-    position: relative;
-    width: 749px;
-    top: 50%;
-}
 
 .giftset__content {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 15%;
+    left: 30%;
     z-index: 45;
     width: 749px;
+    height: 410px;
     background: #FFFFFF;
+    text-align: left;
+    box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+}
+
+.giftset__price {
+    padding: 40px 20px 10px 25px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #C7A17A;
+}
+
+.giftset__title {
+    padding-right: 35px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    /* or 117% */
+    color: #232C38;
+    padding-bottom: 10px;
+}
+
+.giftset__text {
+    padding-left: 20px;
+}
+
+.giftset__btn {
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+    width: 134px;
+    height: 32px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    background: #C7A17A;
+    border-radius: 19px;
+    color: #F9FBFF;
+}
+
+.giftset__ltext {
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #415167;
+}
+
+.giftset__numbers {
+    position: absolute;
+    top: 0%;
+    right: -75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.giftset__number_1, .giftset__number_2, .giftset__number_3 {
+    padding-top: 50px;
+    text-align: center;
+    height: 135px;
+    width: 88px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    color: #415167;
+    background: #FFFFFF;
+    padding-bottom: 40px;
+    box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+}
+
+.giftset__number_2, .giftset__number_3 {
+    mix-blend-mode: normal;
+    z-index: 46;
+    opacity: 0.3;
 }
 
 /* ---Combo ----------------------------- */
