@@ -537,6 +537,14 @@ color: #415167;
 
 .combo__container {
     display: block;
+    max-width: 1250px;
+}
+
+@media (min-width:1500px) {
+    .combo__container {
+        display: block;
+        max-width: 1300px;
+    }
 }
 
 .combo__title {
@@ -567,9 +575,19 @@ color: #415167;
     flex-direction: row;
 }
 
+@media (max-width:1200px) {
+    .combo__products {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .combo__1_content, .combo__2_content, .combo__3_content {
+        width: 349px;
+    }
+}
+
 .combo__products__1, .combo__products__2, .combo__products__3, .combo__products__4 {
     display: block;
-    padding: 5px 15px 20px 0px;
+    padding: 5px 15px 20px 40px;
     z-index: 49;
 }
 
@@ -578,8 +596,14 @@ color: #415167;
     height: 349px;
 }
 
+.combo__1_image, .combo__2_image, .combo__3_image, .combo__4_image {
+    width: 349px;
+    height: 349px;
+}
+
 .combo__1_content, .combo__2_content, .combo__3_content {
-    width: 213px;
+    width: 349px;
+    height: 213px;
     padding: 0px 20px 20px 20px;
     background: #FFFFFF;
     z-index: 49;
@@ -591,21 +615,32 @@ color: #415167;
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
-    padding-bottom: 5px;
-
-
+    padding: 20px 10px;
     color: #C7A17A;
 }
 
-.combo__title {
+.combo__sale {
+    padding-left: 10px;
+    font-family: 'Nunito';
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+
+    color: #415167;
+
+}
+
+.combo__ctitle {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 117%;
+    /* identical to box height, or 117% */
+    
     color: #232C38;
-    padding-bottom: 24px;
-
+    
+    padding-bottom: 5px;
 }
 
 .combo__text {
@@ -620,7 +655,7 @@ color: #415167;
 
 .combo__btn {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 55px;
     padding-top: 5px;
     text-align: center;
     width: 134px;
@@ -643,4 +678,23 @@ color: #415167;
     line-height: 22px;
 
     color: #415167;
+}
+
+@media (min-width:1300px) {
+    .gift__arrow {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 105%;
+        top: 55%;
+    }
+    .gift__arrow-link {
+        height: 10px;
+    }
+}
+
+@media (max-width:1300px) {
+    .gift__arrow {
+        display: none;
+    }
 }
