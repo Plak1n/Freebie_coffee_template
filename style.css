@@ -400,6 +400,12 @@ color: #415167;
     }
   }
 
+@media (max-width:1300px) {
+    .shop__arrow {
+        display: none;
+    }
+}
+
 @media (min-width:1300px) {
     .shop__arrow {
         position: absolute;
@@ -575,6 +581,18 @@ color: #415167;
     flex-direction: row;
 }
 
+@media (min-width: 1200px) {
+    .combo__mask {
+        position: absolute;
+        left: 80%;
+        top: 0%;
+        width: 386px;
+        height: 906px;
+        background: #415167;
+    }    
+
+}
+
 @media (max-width:1200px) {
     .combo__products {
         flex-wrap: wrap;
@@ -685,11 +703,13 @@ color: #415167;
         position: absolute;
         width: 48px;
         height: 48px;
-        left: 105%;
+        left: 100%;
         top: 55%;
+        z-index: 48;
     }
     .gift__arrow-link {
         height: 10px;
+        z-index: 48;
     }
 }
 
