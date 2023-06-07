@@ -516,7 +516,9 @@ color: #415167;
 }
 
 .giftset__title, .giftset__subtitle {
+    position: relative;
     text-align: center;
+    z-index: 49;
 }
 
 .giftset__title {
@@ -537,6 +539,38 @@ color: #415167;
     line-height: 113%;
     
     color: #415167;
+}
+
+.giftset__image-pic {
+    position: relative;
+    left: 5%;
+    top: 50%;
+    z-index: 49;
+}
+
+.giftset__mask {
+    position: absolute;
+    width: 1076px;
+    height: 602px;
+    left: -5%;
+    top: -12%;
+    background: #EDF0F5;
+    z-index: 5;
+}
+
+.giftset__block {
+    position: relative;
+    width: 749px;
+    top: 50%;
+}
+
+.giftset__content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 45;
+    width: 749px;
+    background: #FFFFFF;
 }
 
 /* ---Combo ----------------------------- */
