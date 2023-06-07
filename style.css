@@ -185,7 +185,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 290px;
+        width: 240px;
         height: 768px;
         min-width: 250px;
         background: #415167;
@@ -205,7 +205,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 290px;
+        width: 200px;
         height: 768px;
         min-width: 220px;
         background: #415167;
@@ -218,17 +218,19 @@ html, body {
     .header__logo {
         padding-left: 20px;
     }
+
     .image__img {
         width: 620px;
     }
     .image__mask {
         width: 620px;
-    };
+    }
+
+    .header__image {
+        left: 22%;
+    }
+
     .header__menu {
-        /* position: sticky; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 290px;
         height: 768px;
         min-width: 300px;
@@ -253,6 +255,20 @@ html, body {
 
 .features__containter {
     display: block;
+}
+
+@media (min-width: 1300px) {
+    .features__containter {
+        display: block;
+        max-width: 1240px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .features__containter {
+        display: block;
+        max-width: 1350px;
+    }
 }
 
 .features__title, .features__subtitle {
@@ -517,11 +533,6 @@ color: #415167;
     color: #415167;
 }
 
-
-
-
-
-
 /* ---Combo ----------------------------- */
 
 .combo__container {
@@ -529,6 +540,7 @@ color: #415167;
 }
 
 .combo__title {
+    margin-top: 100px;
     text-align: center;
     font-family: 'Nunito';
     font-style: normal;
@@ -547,9 +559,88 @@ color: #415167;
     font-size: 30px;
     line-height: 113%;
     color: #415167;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 .combo__products {
     display: flex;
+    flex-direction: row;
+}
+
+.combo__products__1, .combo__products__2, .combo__products__3, .combo__products__4 {
+    display: block;
+    padding: 5px 15px 20px 0px;
+    z-index: 49;
+}
+
+.combo__1_image-pic, .combo__2_image-pic, .combo__3_image-pic {
+    width: 349px;
+    height: 349px;
+}
+
+.combo__1_content, .combo__2_content, .combo__3_content {
+    width: 213px;
+    padding: 0px 20px 20px 20px;
+    background: #FFFFFF;
+    z-index: 49;
+}
+
+.combo__price {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    padding-bottom: 5px;
+
+
+    color: #C7A17A;
+}
+
+.combo__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #232C38;
+    padding-bottom: 24px;
+
+}
+
+.combo__text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #151D28;
+    padding-bottom: 40px;
+}
+
+.combo__btn {
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 5px;
+    text-align: center;
+    width: 134px;
+    height: 32px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    background: #C7A17A;
+    border-radius: 19px;
+    color: #F9FBFF;
+}
+
+.combo__ltext {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #415167;
 }
