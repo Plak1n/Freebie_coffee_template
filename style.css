@@ -424,6 +424,7 @@ color: #415167;
 
 .products__1, .products__2, .products__3, .products__4 {
     display: flex;
+    justify-content: center;
     z-index: 49;
 }
 
